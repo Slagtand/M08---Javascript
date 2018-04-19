@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<!-- Per accedir als exercicis s'ha de canviar el número en l'etiqueta script -> 1-15  -->
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <p id="js"><button onclick="resta()">Fes click aquí</button></p>
+    <p id="js2"></p>
+    <p id="js3"></p>
+    <script>
+    // Declarem la funció resta, que mostra una alerta cada cop que s'hi interactua
+    var num1 = 0;
+    var num2 = 0;
+    var resultat = 0;
+    function resta() {
+      num1 = prompt("Introdueixi el primer número per restar:");
+      num2 = prompt("Introdueixi el segón número per restar:");
+      resultat = num1 - num2
+      document.getElementById("js").innerHTML = "El resultat de la resta és:" + "<br>" + num1 + " - " + num2 + " = " + resultat;
+    };
+    </script>
+  </body>
+</html>

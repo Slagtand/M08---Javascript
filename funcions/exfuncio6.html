@@ -1,0 +1,39 @@
+<html>
+<head>
+<title>Exemple</title>
+<script language="JavaScript">
+  // Definim la funció "escriu" amb 3 paràmetres. Quan la invoquem ens mostra el text que li diem
+  // i els paràmetres introduïts
+  function escriu(parametre1, parametre2, parametre3)
+  {
+    document.writeln("Acabes d'invocar a la funció <b>escriu</b> i li has passat
+                              els següents paràmetres:");
+    document.writeln("<br>El primer paràmetre és: <font color='#FFOOOO'>"
+                              + parametre1+ "</font>");
+    document.writeln("<br>El segon paràmetre és: <font color='#FFOOOO'>"
+                              + parametre2 + "</font>");
+    document.writeln("<br>El tercer paràmetre és: <font color='#FFOOOO'>"
+                              + parametre3 + "</font><p>");
+  }
+</script>
+</head>
+
+<body bgcolor="#E0E8E0">
+<form name="form1">
+<table border="0" width="370" align="center">
+<!-- Amb una taula demanem els paràmetres a l'usuari, param1 param2 param3. -->
+  <tr><td align="right">Primer paràmetre:</td><td align="center">
+                              <input type="text" name="param1" value="A"></td></tr>
+  <tr><td align="right">Segon paràmetre:</td><td align="center">
+                              <input type="text" name="param2" value="B"></td></tr>
+  <tr><td align="right">Tercer paràmetre:</td><td align="center">
+                              <input type="text" name="param3" value="C"></td></tr>
+<!-- Amb un botó i l'event onclick, cridem a la funció definida abans amb els valors introduïts.
+    Ho cridem amb el nom donat "paramX" i .value . Ens retornarà el text de la funció amb els paràmetres
+    introduïts a la taula. -->
+  <tr><td colspan="2" align="center"><input type="button" value="Prem aquí"
+              onClick="escriu(param1.value, param2.value, param3.value)"></td></tr>
+</table>
+</form>
+</body>
+</html>

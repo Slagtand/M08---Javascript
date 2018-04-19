@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<!-- Per accedir als exercicis s'ha de canviar el número en l'etiqueta script -> 1-15  -->
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <p id="js"><button onclick="contador()">Púlsame</button></p>
+    <p id="js2"></p>
+    <p id="js3"></p>
+    <script>
+    var num = 0;
+    // Declarem la funció contador, cada cop que hi accedeixi sumarà un cop i tornarà una alerta
+    function contador() {
+      num += 1 ;
+      window.alert("Has pulsado el botón " + num + " veces.");
+    }
+    </script>
+  </body>
+</html>

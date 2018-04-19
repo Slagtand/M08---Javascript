@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<!-- Per accedir als exercicis s'ha de canviar el número en l'etiqueta script -> 1-15  -->
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <p id="js"><button onclick="llista()">Fes click aquí</button></p>
+    <p id="js2"></p>
+    <p id="js3"></p>
+    <script>
+    // Declarem la funció llista, que mostra una alerta cada cop que s'hi interactua
+    var nums = [];
+    var i;
+    function llista() {
+      for (i = 0; i < 3; i++) {
+        nums[i]= prompt("Introdueixi un número:"); 
+      }
+      document.getElementById("js").innerHTML = "Els números ordenats són: " + nums.sort().join(", ");
+    };
+    </script>
+  </body>
+</html>
